@@ -41,7 +41,7 @@
                         columns: data.data.map(function(table) {
                             return {
                                 id: table.name,
-                                dataType: typesMap[table.type]
+                                dataType: typesMap[table.type.toUpperCase()]
                             };
                         })
                     };
